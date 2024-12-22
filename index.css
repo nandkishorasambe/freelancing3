@@ -1,0 +1,146 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0057A0;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.cta-buttons {
+    margin-top: 30px;
+}
+
+.cta-buttons button {
+    background-color: #FFD700;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.cta-buttons button:hover {
+    background-color: #FF8C00;
+}
+
+#contribution {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contribution h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.infographic {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category {
+    width: 26%;
+    
+    margin: 10px;
+    background-color: #F4F4F4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.logo img {
+    max-height: 150px;
+    width: auto;
+    border-radius: 5px;
+}
+.logo-container {
+    display: flex; /* Use Flexbox */
+    justify-content: space-between; /* Logos evenly spread */
+    align-items: center; /* Vertically centered */
+    margin-bottom: 20px;
+}
+
+/* Individual Logo Styling */
+.left-logo img{
+    height: 80px; /* Adjust size for side logos */
+    width: auto;
+    margin-left: 50px;
+}
+
+.right-logo img{
+    height: 80px; /* Adjust size for side logos */
+    width: auto;
+    margin-right: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .category {
+        width: 30%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .cta-buttons button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .category {
+        width: 45%;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 0.

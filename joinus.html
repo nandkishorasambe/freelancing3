@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - Debt-Free Support Fund</title>
+    <link rel="stylesheet" href="joinus.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <!-- Left Logo -->
+            <div class="left-logo">
+                <img src="handshake.jpeg" alt="Left Logo">
+            </div>
+            
+            <!-- Center Logo -->
+            <div class="logo">
+                <img src="logo.jpeg" alt="Debt-Free Support Fund Logo">
+            </div>
+            
+            <!-- Right Logo -->
+            <div class="right-logo">
+                <img src="savingsmonoy.jpg" alt="Right Logo">
+            </div>
+        </div>
+        <h1>हमसे जुड़ें</h1>
+        <p>आपका छोटा योगदान, बड़ा बदलाव। ₹1,000/माह से जुड़ें।</p>
+    </header>
+
+    <!-- Join Us Section -->
+    <section id="join-us">
+        <h2>हमारे अभियान का हिस्सा बनें</h2>
+        <form id="join-form">
+            <div class="form-group">
+                <label for="name">नाम</label>
+                <input type="text" id="name" name="name" placeholder="अपना नाम दर्ज करें" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">ईमेल/संपर्क जानकारी</label>
+                <input type="email" id="email" name="email" placeholder="अपना ईमेल दर्ज करें" required>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">योगदान राशि</label>
+                <input type="number" id="amount" name="amount" placeholder="₹1,000 न्यूनतम" min="1000" required>
+            </div>
+
+            <div class="form-group">
+                <label for="payment">पेमेंट ऑप्शन</label>
+                <select id="payment" name="payment" required>
+                    <option value="">एक विकल्प चुनें</option>
+                    <option value="upi">UPI</option>
+                    <option value="bank">बैंक ट्रांसफर</option>
+                    <option value="card">क्रेडिट/डेबिट कार्ड</option>
+                </select>
+            </div>
+
+            <button  type="submit">मैं कर्ज मुक्त भारत अभियान का हिस्सा बनना चाहता हूं!</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact Us: info@debtfreefoundation.com | Phone: +91-XXXXXXXXXX</p>
+        <p>Follow Us: Facebook | Twitter | Instagram</p>
+    </footer>
+</body>
+</html>

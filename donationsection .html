@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कर्ज मुक्त भारत अभियान</title>
+    <link rel="stylesheet" href="donation.css">
+</head>
+<body>
+
+    <!-- Page Title -->
+    <h1>कर्ज मुक्त भारत अभियान</h1>
+    <p>हमारे अभियान का हिस्सा बनें और भारत को कर्ज मुक्त बनाने में अपना योगदान दें।</p>
+
+    <!-- Donation Section -->
+    <h2 class="section-title">डोनेशन करने का विकल्प</h2>
+    <p>"आपका योगदान हमारे कर्ज मुक्त अभियान को बल देगा।"</p>
+
+    <div class="donation-options">
+        <!-- Predefined Donation Amounts -->
+        <button class="donation-button" onclick="payNow(500)">₹500</button>
+        <button class="donation-button" onclick="payNow(1000)">₹1,000</button>
+        <button class="donation-button" onclick="payNow(5000)">₹5,000</button>
+        <button class="donation-button" onclick="payNow(10000)">₹10,000</button>
+        <br>
+
+        <!-- Custom Donation Input -->
+        <input type="number" id="custom-amount" placeholder="अपनी राशि डालें (₹)" />
+        <button class="donation-button" onclick="customPay()">डोनेट करें</button>
+    </div>
+
+    <!-- Confirmation Message -->
+    <div id="donation-message"></div>
+
+    <script>
+        function payNow(amount) {
+            // Show the confirmation message for predefined amounts
+            document.getElementById('donation-message').innerText = 
+                `धन्यवाद! आपने ₹${amount} का योगदान किया है।`;
+        }
+
+        function customPay() {
+            // Get the custom amount from the input field
+            const customAmount = document.getElementById('custom-amount').value;
+            if (customAmount && customAmount > 0) {
+                document.getElementById('donation-message').innerText = 
+                    `धन्यवाद! आपने ₹${customAmount} का योगदान किया है।`;
+            } else {
+                alert("कृपया सही राशि डालें।");
+            }
+        }
+    </script>
+
+</body>
+</html>
